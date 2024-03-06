@@ -5,7 +5,7 @@ services:
     ports:
       - "5001:5000"
     environment:
-      - MESSAGE="SERVER IMAGE"
+      - MESSAGE="SERVER IMAGE 111"
   web2:
     build: .
     ports:
