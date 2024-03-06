@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  web1:
+    build: .
+    ports:
+      - "5001:5000"
+    environment:
+      - MESSAGE="SERVER 1111111"
+  web2:
+    build: .
+    ports:
+      - "5002:5000"
+    environment:
+      - MESSAGE="SERVER 2222222"
+  web3:
+    build: .
+    ports:
+      - "5003:5000"
+    environment:
+      - MESSAGE="SERVER 3333333"
