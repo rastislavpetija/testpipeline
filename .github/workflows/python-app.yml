@@ -1,0 +1,20 @@
+name: Docker Build and Compose
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_compose:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build -t myimage .
+
+      - name: Start Docker services
+        run: docker-compose up -d
