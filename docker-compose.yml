@@ -5,7 +5,7 @@ services:
     ports:
       - "5001:5000"
     environment:
-      - MESSAGE="TEST MSG CNL123"
+      - MESSAGE="TEST MSG CNL123----------------------------------"
   web2:
     build: .
     ports:
